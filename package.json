@@ -1,15 +1,13 @@
 {
-  "name": "my-youtube-search",
+  "name": "imdb-proxy-serverless",
   "version": "1.0.0",
-  "description": "Vercel serverless function that searches YouTube without an API key",
-  "main": "api/search.js",
+  "description": "Proxy to bypass CORS for IMDb suggestions",
+  "main": "api/proxy.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node test_search.js"
+    "start": "vercel dev"
   },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "youtube-search-without-api-key": "^6.1.0"
+  "dependencies": {},
+  "engines": {
+    "node": "18.x"
   }
 }
