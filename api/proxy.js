@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     // Ensure first letter is valid (a-z), fallback to 'a' if symbol/number to prevent errors
     const safeFirstLetter = /^[a-z]$/.test(firstLetter) ? firstLetter : 'a';
 
-    const targetUrl = `https://v3.sg.media-imdb.com/suggestion/${safeFirstLetter}/${safeQuery}.json`;
+    const targetUrl = `https://v3.sg.media-imdb.com/suggestion/titles/${safeFirstLetter}/${safeQuery}.json`;
 
     // 3. Make the request to IMDb with "Anti-Bot" Headers
     // We impersonate a standard Chrome browser on Windows
